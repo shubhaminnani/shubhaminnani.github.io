@@ -4,77 +4,124 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects | Shubham Innani</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 </head>
 <body>
-    <div class="scroll-up-btn">
-        <i class="fas fa-angle-up"></i>
-    </div>
-    
-    <nav class="navbar sticky">
+
+    <div class="scroll-up-btn"><i class="fas fa-angle-up"></i></div>
+
+    <nav class="navbar sticky" id="navbar">
         <div class="max-width">
             <div class="logo"><a href="index.html">Shubham<span> Innani</span></a></div>
-            <ul class="menu">
-                <li><a href="index.html" class="menu-btn">Home</a></li>
-                <li><a href="publications.html" class="menu-btn">Publications</a></li>
-                <li><a href="awards.html" class="menu-btn">Awards</a></li>
-                <li><a href="projects.html" class="menu-btn">Projects</a></li>
-                <li><a href="index.html#contact" class="menu-btn">Contact</a></li>
+            <ul class="menu" id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="awards.html">Awards</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
             </ul>
-            <div class="menu-btn">
-                <i class="fas fa-bars"></i>
-            </div>
+            <div class="menu-btn" id="menu-btn"><i class="fas fa-bars"></i></div>
         </div>
     </nav>
 
-    <section class="about" id="projects-list" style="padding-top: 100px;">
-        <div class="max-width">
-            <h2 class="title">Research Projects</h2>
-            <div class="about-content">
-                <div class="column right" style="width: 100%;">
-                    <ul class="present-list">
-                        <li>
-                            <strong>Vision Language Model for Pathology (REG 2025):</strong> 
-                            [cite_start]Developed a vision-language model to generate automated diagnostic reports from gigapixel whole slide images[cite: 73].
-                        </li>
-                        <li>
-                            <strong>Prognostic Risk Stratification of Gliomas:</strong> 
-                            [cite_start]Utilized various pathology foundation models and Multiple Instance Learning (MIL) models for risk stratification in adult-type diffuse gliomas[cite: 74, 75].
-                        </li>
-                        <li>
-                            <strong>Biomarker Identification in Gliomas:</strong> 
-                            [cite_start]Explored Self-Supervised Learning (SSL) algorithms based on Vision Transformers (ViT) and DINO for biomarker prediction using a weakly supervised approach[cite: 80, 81, 82].
-                        </li>
-                        <li>
-                            <strong>Automatic Number Plate Recognition:</strong> 
-                            [cite_start]Implemented an end-to-end real-time system using YOLO (You Only Look Once) object detection and Mask-RCNN based Region Proposal Networks[cite: 86, 87, 88].
-                        </li>
-                        <li>
-                            <strong>Retinal Fundus Glaucoma Analysis (REFUGE2):</strong> 
-                            [cite_start]Leveraged EfficientNets and UNet architectures for optic disc/cup segmentation and glaucoma classification[cite: 89, 90].
-                        </li>
-                        <li>
-                            <strong>Anomaly Pattern Segmentation in Agriculture:</strong> 
-                            [cite_start]Developed a Feature Pyramid Network (FPN) encoder with varying decoder backbones for aerial image pattern recognition[cite: 91, 92].
-                        </li>
-                        <li>
-                            <strong>Semantic Scene Segmentation (Indian Driving Dataset):</strong> 
-                            [cite_start]Created an Encoder-Decoder architecture using Inception ResNetV2 and EfficientNets for unstructured environment scene segmentation[cite: 94].
-                        </li>
-                        <li>
-                            <strong>Skin Lesion Analysis (ISIC Challenge):</strong> 
-                            [cite_start]Developed a Generative Adversarial Network (GAN) based architecture for segmentation, paired with ResNets and MobileNets for classification[cite: 95, 96].
-                        </li>
-                    </ul>
-                </div>
-            </div>
+    <section class="page-hero">
+        <div class="max-width page-hero-inner">
+            <div class="page-tag">Work</div>
+            <h1 class="page-title">Research Projects</h1>
         </div>
     </section>
 
-    <footer>
-        <span><span class="far fa-copyright"></span> Shubham Innani | All rights reserved. 2025</span>
+    <section class="page-content">
+        <div class="max-width">
+
+            <div class="pub-group">
+                <h2 class="pub-group-title">Digital Pathology & Clinical AI</h2>
+
+                <div class="project-card">
+                    <div class="project-title">Vision Language Model for Pathology Report Generation (REG 2025)</div>
+                    <div class="project-desc">Developed a vision-language model to automatically generate structured diagnostic reports from gigapixel whole-slide images. Submitted to the MICCAI 2025 REG challenge, achieving 5th place internationally.</div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-title">WHO 2021 Glioma Classification from WSI</div>
+                    <div class="project-desc">Multi-scale whole-slide image assessment pipeline for automated WHO 2021 glioma subtype classification using pathology foundation models and Multiple Instance Learning (MIL). Trained and validated on 2,500+ brain tumor cases from >25 clinical sites. Published in <em>Neuro-Oncology</em>. Won Best Paper at CCBB 2025.</div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-title">IDH Mutation Biomarker Identification in Gliomas</div>
+                    <div class="project-desc">Weakly supervised computational algorithm for IDH mutation status prediction from H&amp;E-stained WSI using Self-Supervised Learning (SSL) based on Vision Transformers (ViT) and DINO. Eliminates dependency on expensive molecular testing. Published in <em>Neuro-Oncology Advances</em>.</div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-title">Prognostic Risk Stratification of Gliomas</div>
+                    <div class="project-desc">AI-based prognostic risk stratification in adult-type diffuse gliomas leveraging pathology foundation models and MIL architectures. Combines WSI morphology with survival prediction objectives for clinically actionable outputs.</div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-title">Multimodal Prognostic Stratification of Glioblastoma (UPenn · CBICA)</div>
+                    <div class="project-desc">Multimodal explainable AI model integrating histopathology imaging and clinical features for GBM patient prognostic stratification. Achieved AUC ≈ 0.75 on a multi-institutional test cohort of 188 GBM patients. Published in <em>Modern Pathology</em> and <em>Frontiers in Neuroscience</em>.</div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-title">Oncocytic Renal Tumor Subtyping</div>
+                    <div class="project-desc">Computational algorithm for AI-based subtyping of oncocytic renal tumors (Renal Oncocytoma, Low-Grade Oncocytic Tumor, Chromophobe RCC) from H&amp;E-stained WSI. Published in <em>Archives of Pathology &amp; Laboratory Medicine</em>.</div>
+                </div>
+            </div>
+
+            <div class="pub-group">
+                <h2 class="pub-group-title">Computer Vision & Prior Work</h2>
+
+                <div class="project-card">
+                    <div class="project-title">Skin Lesion Segmentation & Classification (ISIC Challenge)</div>
+                    <div class="project-desc">GAN-based architecture for skin lesion segmentation combined with CNN-based classification using ResNets, MobileNets, Xception, and EfficientNets. Published in <em>Nature Scientific Reports</em>.</div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-title">Retinal Fundus Glaucoma Analysis (REFUGE2 · MICCAI 2020)</div>
+                    <div class="project-desc">Algorithm for optic disc/cup segmentation, glaucoma classification, and fovea localization from retinal fundus images using EfficientNets and UNet architectures. Ranked Top 10 internationally at MICCAI 2020.</div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-title">Anomaly Pattern Segmentation in Agriculture (Agriculture-Vision · CVPRW 2020)</div>
+                    <div class="project-desc">Feature Pyramid Network (FPN) encoder with varying decoder backbones for aerial agricultural image anomaly pattern recognition. Results published at CVPR 2021 Workshops.</div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-title">Semantic Scene Segmentation · Indian Driving Dataset (AUTONUE)</div>
+                    <div class="project-desc">Encoder-Decoder architecture (InceptionResNetV2, EfficientNets) for semantic scene segmentation in unstructured driving environments. Won 1st Prize at NCVPRIPG 2019 and 2nd Prize at ICVGIP 2020.</div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-title">Automatic Number Plate Recognition (Nymo.ai)</div>
+                    <div class="project-desc">End-to-end real-time ANPR system combining YOLO object detection and Mask-RCNN Region Proposal Networks with OCR integration. Delivered real-time inference at ~6–8 fps on edge devices.</div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-title">Age-Related Macular Degeneration Detection (AMD Challenge · ISBI 2020)</div>
+                    <div class="project-desc">CNN-based algorithms for AMD diagnosis and lesion segmentation from fundus photos. Ranked Top 10 internationally at IEEE ISBI 2020.</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="max-width">
+            <div class="footer-inner">
+                <div class="footer-logo">Shubham <span>Innani</span></div>
+                <div class="footer-links">
+                    <a href="publications.html">Publications</a>
+                    <a href="awards.html">Awards</a>
+                    <a href="projects.html">Projects</a>
+                </div>
+                <div class="footer-copy">© 2025 Shubham Innani. All rights reserved.</div>
+            </div>
+        </div>
     </footer>
 
     <script src="script.js"></script>

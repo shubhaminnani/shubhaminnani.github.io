@@ -3,65 +3,348 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Awards & Honors | Shubham Innani</title>
+    <title>Shubham Innani | AI Research Analyst · Computational Pathology</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 </head>
 <body>
-    <div class="scroll-up-btn">
+
+    <div class="scroll-up-btn" title="Back to top">
         <i class="fas fa-angle-up"></i>
     </div>
-    
-    <nav class="navbar sticky">
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
         <div class="max-width">
             <div class="logo"><a href="index.html">Shubham<span> Innani</span></a></div>
-            <ul class="menu">
-                <li><a href="index.html" class="menu-btn">Home</a></li>
-                <li><a href="publications.html" class="menu-btn">Publications</a></li>
-                <li><a href="awards.html" class="menu-btn">Awards</a></li>
-                <li><a href="projects.html" class="menu-btn">Projects</a></li>
-                <li><a href="index.html#contact" class="menu-btn">Contact</a></li>
+            <ul class="menu" id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="awards.html">Awards</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-            <div class="menu-btn">
+            <div class="menu-btn" id="menu-btn" aria-label="Toggle menu">
                 <i class="fas fa-bars"></i>
             </div>
         </div>
     </nav>
 
-    <section class="about" id="awards-list" style="padding-top: 100px;">
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div class="hero-bg-grid"></div>
+        <div class="hero-glow"></div>
         <div class="max-width">
-            <h2 class="title">Awards & Honors</h2>
-            <div class="about-content">
-                <div class="column right" style="width: 100%;">
-                    <ul class="present-list">
-                        <li><strong>2025:</strong> Best Paper Award for "AI-driven WHO 2021 classification of gliomas based only on H&E-stained slides" at Center for Computational Biology and Bioinformatics Retreat (CCBB), Indianapolis[cite: 17].</li>
-                        <li><strong>2025:</strong> 5th prize in LLM based report generation in pathology challenge (REG) held at MICCAI 2025, the 28th International Conference on Medical Image Computing and Computer Assisted Intervention[cite: 19].</li>
-                        <li><strong>2020:</strong> 2nd Prize in semantic segmentation challenge on IDD dataset organized at Indian Conference on Computer Vision, Graphics and Image Processing (ICVGIP)[cite: 20].</li>
-                        <li><strong>2020:</strong> Ranked among top 10 in retinal fundus glaucoma challenge (REFUGE2) held at MICCAI 2020, the 23rd International Conference on Medical Image Computing and Computer Assisted Intervention[cite: 21].</li>
-                        <li><strong>2020:</strong> Ranked among top 10 in age related macular degeneration (AMD) challenge held at IEEE ISBI 2020, the International Symposium on Biomedical Imaging[cite: 22].</li>
-                        <li><strong>2019:</strong> 1st Prize in semantic segmentation challenge on IDD lite dataset organized at National Conference on Computer Vision, Pattern Recognition, Image Processing and Graphics (NCVPRIPG)[cite: 23].</li>
-                        <li><strong>2019:</strong> Travel Grant awarded to attend National Conference on Computer Vision, Pattern Recognition, Image Processing and Graphics (NCVPRIPG)[cite: 24].</li>
-                    </ul>
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    Research Data Analyst · Indiana University School of Medicine
+                </div>
+                <h1 class="hero-name">Shubham <span>Innani</span></h1>
+                <div class="hero-role">
+                    <span class="role-prefix">Specializing in </span>
+                    <span class="typing-hero"></span>
+                </div>
+                <p class="hero-summary">
+                    AI-in-Healthcare researcher with 5+ years building interpretable deep learning pipelines for clinical digital pathology. Led development of a WSI diagnostic pipeline trained on <strong>2,500+ multi-site cases</strong> — reducing diagnostic turnaround from weeks to minutes.
+                </p>
+                <div class="hero-cta">
+                    <a href="https://shubhaminnani.github.io/shubham_resume.pdf" target="_blank" class="btn-primary">
+                        <i class="fas fa-file-alt"></i> Download CV
+                    </a>
+                    <a href="publications.html" class="btn-secondary">
+                        View Publications <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="hero-socials">
+                    <a href="https://www.linkedin.com/in/shubhaminnani/" target="_blank" title="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/shubhaminnani" target="_blank" title="GitHub"><i class='bx bxl-github'></i></a>
+                    <a href="https://scholar.google.com/citations?user=Aw0CjT8AAAAJ&hl=en" target="_blank" title="Google Scholar"><i class='bx bxl-google'></i></a>
+                    <a href="https://twitter.com/innani8" target="_blank" title="Twitter/X"><i class='bx bxl-twitter'></i></a>
                 </div>
             </div>
+        </div>
+        <div class="hero-scroll-hint">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
 
-            <h2 class="title" style="margin-top: 50px;">Professional Service & Engagement</h2>
-            <div class="about-content">
-                <div class="column right" style="width: 100%;">
-                    <ul class="present-list">
-                        <li><strong>Journal Reviewer:</strong> IEEE Transaction in Medical Imaging, Nature Scientific Reports, IEEE Signal Processing Letters, IEEE Transactions on Neural Networks and Learning Systems, Elsevier Neurocomputing Journal, npj Precision Oncology, BMC Cancer[cite: 98].</li>
-                        <li><strong>Conference Reviewer:</strong> CVPR (Workshops), IEEE ISBI, MICCAI[cite: 98].</li>
-                        <li><strong>Program Committee:</strong> 2nd International Workshop on Medical Optical Imaging and Virtual Microscopy Image Analysis (MOVI) @ MICCAI 2024[cite: 99].</li>
-                        <li><strong>Memberships:</strong> Society of Neuro-Oncology (2025-2026), European Congress for Digital Pathology (2024-2026), American Association of Cancer Research (2025), MICCAI Society (2024), IEEE Signal Processing Society (2024)[cite: 101].</li>
-                    </ul>
+    <!-- STATS BAR -->
+    <section class="stats-bar">
+        <div class="max-width">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-num">8+</div>
+                    <div class="stat-label">Journal Publications</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-num">2,500+</div>
+                    <div class="stat-label">Patient Cases Analyzed</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-num">25+</div>
+                    <div class="stat-label">Clinical Sites</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-num">6</div>
+                    <div class="stat-label">International Presentations</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-num">🏆</div>
+                    <div class="stat-label">Best Paper Award · CCBB 2025</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer>
-        <span><span class="far fa-copyright"></span> Shubham Innani | All rights reserved. 2025</span>
+    <!-- ABOUT -->
+    <section class="about-section section" id="about">
+        <div class="max-width">
+            <div class="section-header">
+                <span class="section-tag">About</span>
+                <h2 class="section-title">Who I Am</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-photo-wrap">
+                    <div class="about-photo-frame">
+                        <img src="images/photo.jpg" alt="Shubham Innani" onerror="this.parentElement.classList.add('no-photo')">
+                        <div class="photo-placeholder-text">SI</div>
+                    </div>
+                    <div class="about-photo-badge">
+                        <i class="fas fa-microscope"></i>
+                        Computational Pathology
+                    </div>
+                </div>
+                <div class="about-text">
+                    <div class="about-subtitle">I specialize in <span class="typing-about"></span></div>
+                    <p>I am a Research Data Analyst in the Division of Computational Pathology at the Indiana University School of Medicine, where I translate AI research into clinical-grade tools that matter.</p>
+                    <p>My work centers on developing interpretable deep learning models for whole-slide image analysis — from WHO 2021 glioma classification to prognostic risk stratification — bridging the gap between computational research and real-world pathology workflows.</p>
+                    <p>Previously at UPenn's CBICA, I built multimodal GBM prognostic models achieving AUC ≈ 0.75 across multi-institutional cohorts. My research has been published in <em>Neuro-Oncology</em>, <em>Modern Pathology</em>, <em>Nature Scientific Reports</em>, and presented at MICCAI, SNO, ECDP, and AACR.</p>
+                    <div class="about-tags">
+                        <span>Whole-Slide Image Analysis</span>
+                        <span>Multiple Instance Learning</span>
+                        <span>Self-Supervised Learning</span>
+                        <span>Clinical AI Translation</span>
+                        <span>HPC / SLURM Pipelines</span>
+                        <span>Interpretable AI</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="experience-section section" id="experience">
+        <div class="max-width">
+            <div class="section-header">
+                <span class="section-tag">Background</span>
+                <h2 class="section-title">Experience & Education</h2>
+            </div>
+            <div class="bg-grid">
+                <!-- Experience Column -->
+                <div class="bg-col">
+                    <h3 class="bg-col-title"><i class="fas fa-briefcase"></i> Experience</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="tl-dot"></div>
+                            <div class="tl-content">
+                                <div class="tl-period">Dec 2023 – Present</div>
+                                <div class="tl-role">Research Data Analyst</div>
+                                <div class="tl-org">Indiana University School of Medicine</div>
+                                <p class="tl-desc">Led development of interpretable AI models for WSI diagnostic classification & prognostic stratification. Built GPU-backed inference pipeline (A6000/A100 SLURM) enabling 10-min/slide inference vs. multi-week molecular workflows.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="tl-dot"></div>
+                            <div class="tl-content">
+                                <div class="tl-period">Aug 2022 – Nov 2023</div>
+                                <div class="tl-role">Visiting Associate</div>
+                                <div class="tl-org">UPenn · Center for Biomedical Image Computing & Analytics (CBICA)</div>
+                                <p class="tl-desc">Developed multimodal GBM prognostic models (imaging + clinical features), AUC ≈ 0.75 across multi-institutional cohorts. Co-authored manuscripts in <em>Modern Pathology</em> and <em>Frontiers in Neuroscience</em>.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="tl-dot"></div>
+                            <div class="tl-content">
+                                <div class="tl-period">Jan 2021 – Jul 2022</div>
+                                <div class="tl-role">Assistant System Engineer</div>
+                                <div class="tl-org">Tata Consultancy Services, Pune</div>
+                                <p class="tl-desc">QA lead for cloud migration of transaction modules (legacy → AWS / Java/Spring Boot) for a leading U.S. financial client. Led 6-person testing component across multi-team migration.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="tl-dot"></div>
+                            <div class="tl-content">
+                                <div class="tl-period">Mar 2020 – Jun 2020</div>
+                                <div class="tl-role">Data Science Intern</div>
+                                <div class="tl-org">Nymo.ai, Bangalore</div>
+                                <p class="tl-desc">Built edge inference pipelines for ANPR and mask-detection. Delivered real-time inference at ~6–8 fps on edge devices with OCR integration.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education Column -->
+                <div class="bg-col">
+                    <h3 class="bg-col-title"><i class="fas fa-graduation-cap"></i> Education</h3>
+                    <div class="edu-cards">
+                        <div class="edu-card-new">
+                            <div class="edu-icon"><i class="fas fa-university"></i></div>
+                            <div class="edu-info">
+                                <div class="edu-degree">B.Tech · Electronics & Telecommunication</div>
+                                <div class="edu-school">Shri Guru Gobind Singhji Institute of Engineering & Technology</div>
+                                <div class="edu-year">2016 – 2020</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 class="bg-col-title" style="margin-top: 40px;"><i class="fas fa-map-marker-alt"></i> Recent Presentations</h3>
+                    <div class="presentations-list">
+                        <div class="pres-item">
+                            <div class="pres-year">2025</div>
+                            <div class="pres-detail">Oral & Poster — <strong>SNO 2025</strong>, Honolulu, HI</div>
+                        </div>
+                        <div class="pres-item">
+                            <div class="pres-year">2025</div>
+                            <div class="pres-detail">Oral — <strong>ECDP 2025</strong>, Barcelona, Spain</div>
+                        </div>
+                        <div class="pres-item">
+                            <div class="pres-year">2025</div>
+                            <div class="pres-detail">Poster — <strong>AACR 2025</strong>, Chicago, IL</div>
+                        </div>
+                        <div class="pres-item">
+                            <div class="pres-year">2024</div>
+                            <div class="pres-detail">Oral — <strong>SNO 2024</strong>, Houston, TX</div>
+                        </div>
+                        <div class="pres-item">
+                            <div class="pres-year">2024</div>
+                            <div class="pres-detail">2× Oral — <strong>ECDP 2024</strong>, Vilnius, Lithuania</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HIGHLIGHTS / FEATURED -->
+    <section class="highlights-section section" id="highlights">
+        <div class="max-width">
+            <div class="section-header">
+                <span class="section-tag">Highlights</span>
+                <h2 class="section-title">Featured Work</h2>
+            </div>
+            <div class="highlights-grid">
+                <div class="highlight-card">
+                    <div class="hl-icon"><i class="fas fa-brain"></i></div>
+                    <h3>WHO 2021 Glioma Classification</h3>
+                    <p>AI-driven classification of glioma subtypes directly from H&amp;E-stained slides — validated on 2,500+ cases across 25+ sites. Published in <em>Neuro-Oncology</em>. Won Best Paper at CCBB 2025.</p>
+                    <a href="publications.html" class="hl-link">View Publication <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="highlight-card">
+                    <div class="hl-icon"><i class="fas fa-dna"></i></div>
+                    <h3>IDH Mutation Detection from Histology</h3>
+                    <p>Interpretable AI for glioma IDH mutation status prediction directly from WSI — removing dependency on expensive molecular testing. Published in <em>Neuro-Oncology Advances</em>.</p>
+                    <a href="publications.html" class="hl-link">View Publication <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="highlight-card">
+                    <div class="hl-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>Multimodal GBM Prognostic Model</h3>
+                    <p>Multimodal explainable AI integrating imaging + clinical features for glioblastoma patient stratification. AUC ≈ 0.75 on multi-institutional test set. Published in <em>Modern Pathology</em>.</p>
+                    <a href="publications.html" class="hl-link">View Publication <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="highlight-card">
+                    <div class="hl-icon"><i class="fas fa-file-medical"></i></div>
+                    <h3>WSI Diagnostic Pipeline</h3>
+                    <p>End-to-end clinician-facing pipeline with GPU-backed inference (A100/H100 SLURM) enabling slide analysis in ~10 minutes vs. multi-week molecular workflows. Staged for IU Health clinical validation.</p>
+                    <a href="projects.html" class="hl-link">View Projects <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact-section section" id="contact">
+        <div class="max-width">
+            <div class="section-header">
+                <span class="section-tag">Contact</span>
+                <h2 class="section-title">Get In Touch</h2>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <p class="contact-intro">Open to research collaborations, speaking invitations, and discussions about AI in digital pathology.</p>
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <div class="ci-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="ci-text">
+                                <div class="ci-label">Location</div>
+                                <div class="ci-value">Indianapolis, IN, USA</div>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="ci-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="ci-text">
+                                <div class="ci-label">Email</div>
+                                <div class="ci-value"><a href="mailto:shubham.innani@gmail.com">shubham.innani@gmail.com</a></div>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="ci-icon"><i class="fab fa-linkedin"></i></div>
+                            <div class="ci-text">
+                                <div class="ci-label">LinkedIn</div>
+                                <div class="ci-value"><a href="https://www.linkedin.com/in/shubhaminnani/" target="_blank">shubhaminnani</a></div>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="ci-icon"><i class="fas fa-graduation-cap"></i></div>
+                            <div class="ci-text">
+                                <div class="ci-label">Google Scholar</div>
+                                <div class="ci-value"><a href="https://scholar.google.com/citations?user=Aw0CjT8AAAAJ&hl=en" target="_blank">View Profile</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" action="mailto:shubham.innani@gmail.com" method="get" enctype="text/plain">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="body" rows="6" placeholder="Your message..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary full-width">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="max-width">
+            <div class="footer-inner">
+                <div class="footer-logo">Shubham <span>Innani</span></div>
+                <div class="footer-links">
+                    <a href="publications.html">Publications</a>
+                    <a href="awards.html">Awards</a>
+                    <a href="projects.html">Projects</a>
+                </div>
+                <div class="footer-copy">© 2025 Shubham Innani. All rights reserved.</div>
+            </div>
+        </div>
     </footer>
 
     <script src="script.js"></script>
