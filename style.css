@@ -26,7 +26,7 @@
     --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-html { scroll-behavior: smooth; font-size: 16px; }
+html { scroll-behavior: smooth; font-size: 18px; }
 
 body {
     font-family: 'DM Sans', sans-serif;
@@ -112,7 +112,7 @@ em { font-style: italic; color: var(--text-muted); }
     display: block;
     padding: 8px 14px;
     color: var(--text-muted);
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 500;
     border-radius: var(--radius-sm);
     transition: var(--transition);
@@ -168,11 +168,11 @@ em { font-style: italic; color: var(--text-muted); }
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    padding: 6px 16px;
+    padding: 7px 18px;
     background: rgba(196,30,58,0.1);
     border: 1px solid rgba(196,30,58,0.25);
     border-radius: 100px;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     font-weight: 500;
     color: var(--crimson-light);
     letter-spacing: 0.3px;
@@ -202,7 +202,7 @@ em { font-style: italic; color: var(--text-muted); }
 .hero-name span { color: var(--crimson); }
 
 .hero-role {
-    font-size: 1.25rem;
+    font-size: 1.4rem;
     font-weight: 400;
     color: var(--text-muted);
     margin-bottom: 28px;
@@ -216,7 +216,7 @@ em { font-style: italic; color: var(--text-muted); }
 }
 
 .hero-summary {
-    font-size: 1.05rem;
+    font-size: 1.1rem;
     color: var(--text-muted);
     line-height: 1.8;
     margin-bottom: 40px;
@@ -235,31 +235,31 @@ em { font-style: italic; color: var(--text-muted); }
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    padding: 13px 28px;
+    padding: 14px 30px;
     background: var(--crimson);
     color: #fff;
     border-radius: var(--radius-sm);
     font-weight: 600;
-    font-size: 0.9rem;
+    font-size: 1rem;
     letter-spacing: 0.3px;
     transition: var(--transition);
     border: none;
     cursor: pointer;
 }
 .btn-primary:hover { background: var(--crimson-dark); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(196,30,58,0.35); }
-.btn-primary.full-width { width: 100%; justify-content: center; font-size: 1rem; padding: 15px 28px; }
+.btn-primary.full-width { width: 100%; justify-content: center; font-size: 1.05rem; padding: 16px 30px; }
 
 .btn-secondary {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    padding: 13px 28px;
+    padding: 14px 30px;
     background: transparent;
     color: var(--text);
     border: 1px solid var(--border);
     border-radius: var(--radius-sm);
     font-weight: 500;
-    font-size: 0.9rem;
+    font-size: 1rem;
     transition: var(--transition);
 }
 .btn-secondary:hover { background: var(--surface); border-color: rgba(255,255,255,0.15); transform: translateY(-2px); }
@@ -290,7 +290,7 @@ em { font-style: italic; color: var(--text-muted); }
     align-items: center;
     gap: 8px;
     color: var(--text-dim);
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     letter-spacing: 2px;
     text-transform: uppercase;
     font-family: 'DM Mono', monospace;
@@ -324,14 +324,14 @@ em { font-style: italic; color: var(--text-muted); }
 }
 .stat-num {
     font-family: 'Playfair Display', serif;
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-weight: 700;
     color: var(--crimson);
     line-height: 1.1;
     margin-bottom: 6px;
 }
 .stat-label {
-    font-size: 0.78rem;
+    font-size: 0.95rem;
     color: var(--text-muted);
     text-transform: uppercase;
     letter-spacing: 0.8px;
@@ -345,7 +345,7 @@ em { font-style: italic; color: var(--text-muted); }
 .section-tag {
     display: inline-block;
     font-family: 'DM Mono', monospace;
-    font-size: 0.75rem;
+    font-size: 0.95rem;
     color: var(--crimson);
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -408,7 +408,7 @@ em { font-style: italic; color: var(--text-muted); }
     color: #fff;
     padding: 8px 18px;
     border-radius: 100px;
-    font-size: 0.78rem;
+    font-size: 0.98rem;
     font-weight: 600;
     display: flex;
     align-items: center;
@@ -445,7 +445,7 @@ em { font-style: italic; color: var(--text-muted); }
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: 100px;
-    font-size: 0.78rem;
+    font-size: 0.98rem;
     color: var(--text-muted);
     font-family: 'DM Mono', monospace;
 }
@@ -468,7 +468,7 @@ em { font-style: italic; color: var(--text-muted); }
     align-items: center;
     gap: 8px;
     font-family: 'DM Mono', monospace;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 }
 .bg-col-title i { color: var(--crimson); }
 
@@ -501,7 +501,7 @@ em { font-style: italic; color: var(--text-muted); }
 }
 .tl-period {
     font-family: 'DM Mono', monospace;
-    font-size: 0.72rem;
+    font-size: 0.92rem;
     color: var(--crimson);
     text-transform: uppercase;
     letter-spacing: 0.5px;
@@ -514,13 +514,13 @@ em { font-style: italic; color: var(--text-muted); }
     margin-bottom: 2px;
 }
 .tl-org {
-    font-size: 0.85rem;
+    font-size: 0.95rem;
     color: var(--text-muted);
     margin-bottom: 8px;
     font-style: italic;
 }
 .tl-desc {
-    font-size: 0.85rem;
+    font-size: 0.95rem;
     color: var(--text-dim);
     line-height: 1.7;
 }
@@ -544,8 +544,8 @@ em { font-style: italic; color: var(--text-muted); }
     font-size: 1.2rem;
 }
 .edu-degree { font-weight: 600; font-size: 0.95rem; margin-bottom: 4px; }
-.edu-school { font-size: 0.83rem; color: var(--text-muted); margin-bottom: 4px; }
-.edu-year { font-family: 'DM Mono', monospace; font-size: 0.75rem; color: var(--crimson); }
+.edu-school { font-size: 0.93rem; color: var(--text-muted); margin-bottom: 4px; }
+.edu-year { font-family: 'DM Mono', monospace; font-size: 0.95rem; color: var(--crimson); }
 
 /* Presentations */
 .presentations-list { display: flex; flex-direction: column; gap: 12px; }
@@ -560,12 +560,12 @@ em { font-style: italic; color: var(--text-muted); }
 }
 .pres-year {
     font-family: 'DM Mono', monospace;
-    font-size: 0.75rem;
+    font-size: 0.95rem;
     color: var(--crimson);
     min-width: 32px;
     margin-top: 2px;
 }
-.pres-detail { font-size: 0.85rem; color: var(--text-muted); line-height: 1.5; }
+.pres-detail { font-size: 0.95rem; color: var(--text-muted); line-height: 1.5; }
 .pres-detail strong { color: var(--text); }
 
 /* --- HIGHLIGHTS SECTION --- */
@@ -613,13 +613,13 @@ em { font-style: italic; color: var(--text-muted); }
     line-height: 1.3;
 }
 .highlight-card p {
-    font-size: 0.88rem;
+    font-size: 0.98rem;
     color: var(--text-muted);
     line-height: 1.75;
     margin-bottom: 20px;
 }
 .hl-link {
-    font-size: 0.82rem;
+    font-size: 0.92rem;
     font-weight: 600;
     color: var(--crimson);
     display: inline-flex;
@@ -652,7 +652,7 @@ em { font-style: italic; color: var(--text-muted); }
     display: flex; align-items: center; justify-content: center;
     color: var(--crimson);
 }
-.ci-label { font-size: 0.75rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 2px; font-family: 'DM Mono', monospace; }
+.ci-label { font-size: 0.95rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 2px; font-family: 'DM Mono', monospace; }
 .ci-value { font-size: 0.9rem; color: var(--text); }
 .ci-value a { color: var(--text); transition: color var(--transition); }
 .ci-value a:hover { color: var(--crimson); }
@@ -700,12 +700,12 @@ em { font-style: italic; color: var(--text-muted); }
 .footer-logo span { color: var(--crimson); }
 .footer-links { display: flex; gap: 24px; }
 .footer-links a {
-    font-size: 0.85rem;
+    font-size: 0.95rem;
     color: var(--text-muted);
     transition: color var(--transition);
 }
 .footer-links a:hover { color: var(--text); }
-.footer-copy { font-size: 0.8rem; color: var(--text-dim); }
+.footer-copy { font-size: 0.9rem; color: var(--text-dim); }
 
 /* =============================================
    SECONDARY PAGES (publications, awards, projects)
@@ -731,7 +731,7 @@ em { font-style: italic; color: var(--text-muted); }
 .page-tag {
     display: inline-block;
     font-family: 'DM Mono', monospace;
-    font-size: 0.75rem;
+    font-size: 0.95rem;
     color: var(--crimson);
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -774,7 +774,7 @@ em { font-style: italic; color: var(--text-muted); }
 .pub-list li:hover { border-color: rgba(196,30,58,0.25); background: var(--surface); }
 .pub-list li .pub-year {
     font-family: 'DM Mono', monospace;
-    font-size: 0.75rem;
+    font-size: 0.95rem;
     color: var(--crimson);
     font-weight: 600;
     display: inline-block;
@@ -808,14 +808,14 @@ em { font-style: italic; color: var(--text-muted); }
 .award-card.featured .award-badge { background: rgba(212,168,83,0.15); }
 .award-year {
     font-family: 'DM Mono', monospace;
-    font-size: 0.72rem;
+    font-size: 0.92rem;
     color: var(--crimson);
     margin-bottom: 4px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
 .award-card.featured .award-year { color: var(--gold); }
-.award-desc { font-size: 0.88rem; color: var(--text-muted); line-height: 1.6; }
+.award-desc { font-size: 0.98rem; color: var(--text-muted); line-height: 1.6; }
 .award-desc strong { color: var(--text); }
 
 /* Project Cards */
@@ -847,7 +847,7 @@ em { font-style: italic; color: var(--text-muted); }
     color: var(--text);
     margin-bottom: 10px;
 }
-.project-desc { font-size: 0.88rem; color: var(--text-muted); line-height: 1.75; }
+.project-desc { font-size: 0.98rem; color: var(--text-muted); line-height: 1.75; }
 
 /* Service items */
 .service-item {
@@ -858,14 +858,14 @@ em { font-style: italic; color: var(--text-muted); }
     margin-bottom: 8px;
 }
 .service-label {
-    font-size: 0.75rem;
+    font-size: 0.95rem;
     font-family: 'DM Mono', monospace;
     color: var(--crimson);
     text-transform: uppercase;
     letter-spacing: 0.8px;
     margin-bottom: 6px;
 }
-.service-content { font-size: 0.88rem; color: var(--text-muted); line-height: 1.6; }
+.service-content { font-size: 0.98rem; color: var(--text-muted); line-height: 1.6; }
 
 /* =============================================
    RESPONSIVE
@@ -926,12 +926,12 @@ em { font-style: italic; color: var(--text-muted); }
     animation: pulse-dot 2s ease-in-out infinite;
 }
 .news-banner-text {
-    font-size: 0.83rem;
+    font-size: 0.93rem;
     color: var(--text-muted);
     line-height: 1.4;
 }
 .news-banner-link {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     font-weight: 600;
     color: var(--crimson);
     white-space: nowrap;
@@ -943,7 +943,7 @@ em { font-style: italic; color: var(--text-muted); }
 
 /* News link on highlight cards */
 .hl-links { display: flex; flex-wrap: wrap; gap: 16px; align-items: center; }
-.hl-link-news { color: var(--text-muted) !important; font-size: 0.8rem !important; }
+.hl-link-news { color: var(--text-muted) !important; font-size: 0.9rem !important; }
 .hl-link-news:hover { color: var(--crimson) !important; }
 
 /* Inline news link on publication entries */
@@ -951,7 +951,7 @@ em { font-style: italic; color: var(--text-muted); }
     display: inline-flex;
     align-items: center;
     gap: 5px;
-    font-size: 0.78rem;
+    font-size: 0.98rem;
     font-weight: 500;
     color: var(--crimson);
     margin-top: 8px;
@@ -973,7 +973,7 @@ em { font-style: italic; color: var(--text-muted); }
 }
 
 @media (max-width: 480px) {
-    .hero-badge { font-size: 0.7rem; padding: 5px 12px; }
+    .hero-badge { font-size: 0.8rem; padding: 5px 12px; }
     .stat-item { padding: 0 10px; }
     .stat-num { font-size: 1.5rem; }
 }
